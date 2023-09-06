@@ -14,4 +14,11 @@ public class SayHelloController {
 		return "Hello Wooorld!"; //it will be looking for a view if we return a string
 	}
 
+	@RequestMapping("say-hello-html")
+	@ResponseBody
+	public String sayHelloHtml() {
+		return "<html><title>My title </title><body><h1>Hello Wooorld!</h1></body></html>";
+	}
+
+
 }
