@@ -13,5 +13,7 @@
         </label><br/>
             <input type="submit" value="Login" onclick=""/>
         </form>
+
+        ${errorMessage}
     </body>
 </html>
