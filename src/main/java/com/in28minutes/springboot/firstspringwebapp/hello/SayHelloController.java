@@ -20,5 +20,11 @@ public class SayHelloController {
 		return "<html><title>My title </title><body><h1>Hello Wooorld!</h1></body></html>";
 	}
 
+	//JSP is a view technology called Java Server Pages
+	//src/main/resources/META-INF/resources/WEB-INF/jsp/sayHello.jsp
+	@RequestMapping("say-hello-jsp")
+	public String sayHelloJsp() {
+		return "sayHello"; //name of the jsp file
+	}
 
 }
